@@ -1,6 +1,5 @@
 class DoubleStrand
   def complementary_strip(strand)
-    gene = {'A'=>'T', 'T'=>'A', 'G'=>'C', 'C'=>'G'}
-    strand.gsub(/\w/, gene)
+    strand.tr('ATGC', 'TACG')
   end
 end
